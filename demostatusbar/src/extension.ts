@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 
 function isSQLFormatted(sql: string): boolean {
-    // Quebra o SQL em linhas 
+    // Quebra o SQL em linhas pedroca
     const lines = sql.trim().split('\n');
     
     // Define os padrões esperados para cada linha
