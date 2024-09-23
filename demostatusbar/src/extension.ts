@@ -13,7 +13,7 @@ function isSQLFormatted(sql: string): boolean {
         /^And\s.*/i            // Padrão para linha de AND
     ];
 
-    // Verifica se cada linha corresponde aos padrões esperados
+    // Verifica se cada linha corresponde aos padrões esperados acho q poderia ser assim
     let patternIndex = 0;
 
     for (const line of lines) {
