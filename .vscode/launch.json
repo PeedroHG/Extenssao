@@ -1,0 +1,30 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}"
+      ],
+      "name": "Iniciar a Extensão",
+      "outFiles": [
+        "${workspaceFolder}/out/**/*.js"
+      ],
+      "preLaunchTask": "npm",
+      "request": "launch",
+      "type": "extensionHost"
+    },
+    {
+      "type": "extensionHost",
+      "request": "launch",
+      "name": "Debug Extension",
+      "outFiles": [
+        "${workspaceFolder}/out/**/*.js"
+      ],
+      "preLaunchTask": "npm: watch",
+      "env": {
+        "VSCODE_LOG_LEVEL": "debug"
+      },
+      "trace": true
+    }
+  ]
+}
